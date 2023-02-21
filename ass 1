@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int s=0,r=0,n,m;
+scanf("%d",&n);
+m=n;
+while(n!=0)
+{
+	r=n%10;
+	s=(s*10)+r;
+	n=n/10;
+}
+if(s==m)
+printf("given no is a palindrome");
+else
+printf("given no is not a palindrome");
+}
